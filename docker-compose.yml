@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  alpha:
+    container_name: alpha
+    build:
+      context: src/Alpha
+    ports:
+      - 5000:80
+  beta:
+    container_name: beta
+    build:
+      context: src/Beta
+    ports:
+      - 5001:80
